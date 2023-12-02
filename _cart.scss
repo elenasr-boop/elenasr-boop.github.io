@@ -1,0 +1,181 @@
+.cart {
+    display: grid;
+    grid-template-columns: 786px auto;
+    gap: 33px;
+    padding-top: 64px;
+}
+
+.cart__main {
+    display: flex;
+    flex-direction: column;
+    max-width: 786px;
+
+    .cart__name-box {
+        display: flex;
+        justify-content: space-between;
+        padding-right: 27px;
+        border-bottom: 0.5px solid #CACDD8;
+        padding-bottom: 14px;
+        .cart__nav {
+            color: #000;
+            font-size: 16px;
+            font-weight: 400;
+        }
+    }
+
+    .cart__item {
+    
+        display: flex;
+        justify-content: space-between;
+        padding-top: 25px;
+        padding-bottom: 32px;
+
+        .cart__card {
+            display: flex;
+
+            .cart__img {
+                background-size: cover;
+                background-repeat: no-repeat;
+                background-position: center;
+                width: 173px;
+                height: 173px;
+                margin-right: 31px;
+            }
+
+            .cart__img1 {
+                background-image: url(./img/menu.png);
+            }
+
+            .cart__img2 {
+                background-image: url(./img/nastan.png);
+            }
+
+            .cart__info {
+
+                .desc {
+                    max-width: 276px;
+                }
+
+                .cart__btn {
+                    color: #000;
+                    text-align: center;
+                    font-size: 14px;
+                    font-weight: 400;
+                    line-height: 210%;
+                    text-decoration-line: underline;
+                    padding-right: 30px;
+                }
+            }
+        }
+
+        .cart__input {
+            border-radius: 6px;
+            border: #f7f6f6;
+            background: #F7F6F6;
+            width: 71px;
+            height: 51px;
+            padding-left: 15px;
+        }
+    }
+
+    .cart__item1 {
+        border-bottom: 0.5px solid #CACDD8;
+    }
+
+    .cart__item2 {
+        padding-top: 50px;
+    }
+
+    .btn {
+        display: flex;
+        gap: 7px;
+        padding-top: 18px;
+
+        .cart__button {
+            border-radius: 50px;
+            border: 1px solid #000;
+            text-align: center;
+            width: 200px;
+            background-color: transparent;
+            padding-top: 10px;
+            padding-bottom: 11px;
+        }
+
+        .cart__button:hover {
+            background-color: #000;
+            color: #fff;
+        }
+    }
+}
+
+.cart__form {
+    display: flex;
+    justify-self: end;
+    flex-direction: column;
+    border-radius: 20px;
+    background: #F7F6F6;
+    padding: 42px 64px 148px 27px;
+
+    .cart__oform {
+        color: #000;
+        text-align: center;
+        font-family: Poppins, "sans-serif";
+        font-size: 24px;
+        font-weight: 600;
+        padding-bottom: 35px;
+    }
+
+    .form__cart {
+        display: flex;
+        flex-direction: column;
+        color: #000;
+        text-align: center;
+        font-size: 14px;
+        font-weight: 400;
+        margin-bottom: 23px;
+
+        .form {
+            border: none;
+            border-bottom: 1px solid #CACDD8;
+            background-color: #F7F6F6;
+            margin-bottom: 41px;
+        }
+    }
+
+    .summa {
+        color: #000;
+        font-size: 24px;
+        font-weight: 400;
+        display: inline;
+        align-self: center;
+    }
+
+    .total {
+        font-weight: 600;
+        display: inline;
+    }
+
+    .order {
+        border-radius: 20px;
+        border: 1px solid #040404;
+        color: #000;
+        text-align: center;
+        font-size: 16px;
+        font-weight: 400;
+        width: 289px;
+        height: 41px;
+        margin-top: 18px;
+        margin-left: 18px;
+        align-self: center;
+        background-color: transparent;
+        transition: 0.33s;
+        &:hover {
+            transform: scale(1.05) translate(0px, 15px);
+        }
+    }
+
+    .order:hover {
+        background-color: #000;
+        color: #fff;
+    }
+}

@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;500;600&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+
+<body>
+    <header class="top top__basket center">
+        <div class="header">
+            <a href="index.html" class="logo">
+                <picture>
+                <source media="(max-width: 767px)" srcset="./img/mob_logo.svg">
+                <source media="(min-width: 768px)" srcset="./img/logo.svg">
+                <img src="./img/logo.svg" alt="photo">
+                </picture></a>
+            <input class="input" placeholder="Поиск">
+            <img src="./img/search.png" class="mob__view" alt="Search">
+            <nav class="nav">
+                <a href="catalog.html" class="nav_link">Каталог</a>
+                <a href="catalog.html"  class="mob__view"><img src="./img/catalog.png" alt="Catalog"></a>
+                <a href="basket.html" class="nav_link">Корзина</a>
+                <a href="basket.html" class="mob__view"><img src="./img/cart.png" alt="Cart"></a>
+            </nav>
+        </div>
+        <section class="sect slogan__catalog">
+            <h1 class="section_slogan ">Корзина</h1>
+        </section>
+    </header>
+
+    <section class="center cart">
+        <div class="cart__main">
+            <div class="cart__name-box">
+                <p class="cart__nav">Товар</p>
+                <p class="cart__nav">К-во</p>
+            </div>
+            <div class="cart__item cart__item1">
+                <div class="cart__card">
+                    <div class="cart__img cart__img1"></div>
+                    <div class="cart__info">
+                        <h3 class="product_name">Стол MENU</h3>
+                        <p class="desc">Для того чтобы трапезничать было приятно, необходим правильный обеденный стол.
+                        </p>
+                        <p class="price_new">34 000 руб.</p>
+                        <a href="#" class="cart__btn">Избранные</a>
+                        <a href="#" class="cart__btn">Удалить</a>
+                    </div>
+                </div>
+                <input type="number" value="1" min="1" class="cart__input">
+            </div>
+            <div class="cart__item cart__item2">
+                <div class="cart__card">
+                    <div class="cart__img cart__img2"></div>
+                    <div class="cart__info">
+                        <h3 class="product_name">Диван NASTAN</h3>
+                        <p class="desc">Модель отличается простотой линий и форм, отсутствием броского декора. </p>
+                        <p class="price_new">80 000 руб.</p>
+                        <a href="#" class="cart__btn">Избранные</a>
+                        <a href="#" class="cart__btn">Удалить</a>
+                    </div>
+                </div>
+                <input type="number" value="1" min="1" class="cart__input">
+            </div>
+            <div class="btn">
+                <button class="cart__button">Очистить корзину</button>
+                <button class="cart__button">Продолжить покупки</button>
+            </div>
+        </div>
+        <div class="cart__form">
+            <h3 class="cart__oform">Оформление заказа</h3>
+            <div class="form__cart">
+                <input type="text" placeholder="Имя Фамилия" class="form">
+                <input type="tel" placeholder="+ 7 904 000 80 80" class="form">
+                <input type="text" placeholder="Адрес доставки" class="form">
+            </div>
+            <h4 class="summa">Итого: <p class="total">128 000 руб.</p>
+            </h4>
+            <button class="order">Оформить заказ</button>
+        </div>
+    </section>
+
+    <section class="product_box center">
+        <h2 class="txt">Специальные предложения</h2>
+        <div class="product_content">
+            <div class="product">
+                <img src="./img/tatran1.jpg" class="product__img" alt="tatran">
+                <h3 class="product_name">Кровать TATRAN</h3>
+                <p class="desc">Основание из полированной нержавеющей стали, придает оригинальный парящий эффект.</p>
+                <div class="price">
+                    <p class="price_new">120 000 руб. <span class="price_old">140 000 руб.</span></p>
+                    
+                </div>
+            </div>
+            <div class="product">
+                <img src="./img/vilora.jpg" class="product__img" alt="vilora">
+                <h3 class="product_name">Кресло VILORA</h3>
+                <p class="desc">Мягкое и уютное, аккуратное и стильное. Упругие подушки сиденья и приятная на ощупь
+                    ткань. </p>
+                <div class="price">
+                    <p class="price_new">21 000 руб. <span class="price_old">28 000 руб.</span></p>
+                    
+                </div>
+            </div>
+            <div class="product">
+                <img src="./img/menu.jpg" class="product__img" alt="menu">
+                <h3 class="product_name">Стол MENU</h3>
+                <p class="desc">Европейский дуб - отличается особой прочностью и стабильностью.</p>
+                <div class="price">
+                    <p class="price_new">34 000 руб. <span class="price_old">45 000 руб.</span></p>
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <a href="./catalog.html" class="link_box center">Перейти в каталог</a>
+
+    <footer class="footer center">
+        <div class="img__footer"><img src="./img/logo_footer.svg" class="footer_logo" alt="Logo"></div>
+        <div class="footer_content">
+            <div class="footer_info">
+                <div class="nav footer_item">
+                    <h4 class="menu">Меню</h4>
+                    <a href="index.html" class="link">Главная</a>
+                    <a href="catalog.html" class="link">Каталог</a>
+                    <a href="basket.html" class="link">Корзина</a>
+                </div>
+                <div class="nav footer_item">
+                    <h4 class="menu">Контакты</h4>
+                    <a href="#" class="link">+7 908 800 80 80</a>
+                    <a href="#" class="link">help@interier.com</a>
+                    <div class="footer_img">
+                        <a href="#"><img src="./img/inst.svg" class="icon" alt="Instagram"></a>
+                        <a href="#"><img src="./img/twitter.svg" class="icon" alt="Twitter"></a>
+                        <a href="#"><img src="./img/facebook.svg" class="icon" alt="Facebook"></a>
+                    </div>
+                </div>
+            </div>
+            <form action="#" class="footer_form">
+                <p class="news">Получайте наши новости и обновления</p>
+                <input type="email" class="mail" placeholder="Email Adress">
+                <button class="button">Подписаться</button>
+            </form>
+        </div>
+    </footer>
+</body>
+
+</html>

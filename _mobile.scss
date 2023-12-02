@@ -1,0 +1,146 @@
+@media (max-width: 767px) {
+
+    .center {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
+    //for all pages
+
+    .input,
+    .nav_link {
+        display: none;
+    }
+
+    .mob__view {
+        display: block;
+    }
+
+    .header {
+        justify-content: flex-end;
+        gap: 32px;
+
+        .logo {
+            margin-right: calc(100% - 249px);
+        }
+    }
+
+    .footer_content {
+        flex-direction: column;
+        gap: 47px;
+    }
+
+    .product_name {
+        font-size: 18px;
+    }
+
+    .product_content {
+        row-gap: 32px;
+    }
+
+    .desc {
+        font-size: 12px;
+    }
+
+    .price_new,
+    .price_old {
+        font-size: 12px;
+    }
+
+    //main page
+
+    .sect {
+        width: 100%;
+
+        .section_slogan {
+            text-align: center;
+            font-size: 48px;
+        }
+
+        .lead {
+            font-size: 16px;
+            text-align: center;
+        }
+
+        .link_catalog {
+            padding-left: calc(50% - 77px);
+        }
+    }
+
+    .for {
+        height: 100%;
+
+        .for__content {
+            grid-template-columns: repeat(auto-fit, 100%);
+            grid-template-areas: "item1" "item2" "item3" "item4" "item5";
+            padding-top: 0px;
+        }
+
+        .item1,
+        .item2 {
+            height: 243px;
+        }
+
+        .item3,
+        .item4,
+        .item5 {
+            height: 375px;
+        }
+    }
+
+    .product {
+        width: 100%;
+
+        &__img {
+            width: 100%;
+        }
+    }
+
+    //catalog
+
+    .help {
+        flex-wrap: wrap;
+        padding-top: 32px;
+        gap: 16px;
+    }
+
+    //cart
+
+    .cart__nav {
+        display: none;
+    }
+
+    .cart__main .cart__item {
+
+        justify-content: flex-start;
+        .cart__img {
+            display: none;
+        }
+
+        .cart__info {
+            padding-left: 0px;
+        }
+    }
+
+    .cart__main .btn .cart__button {
+                width: 166px;
+            }
+    
+    .order {
+        width: 290px;
+    }
+
+    .cart__form {
+        padding-right: 28px;
+        width: 343px;
+    }
+
+    .txt {
+        font-size: 24px;
+        font-weight: 600;
+    }
+
+    .footer_info {
+        gap: 100px;
+    }
+}
